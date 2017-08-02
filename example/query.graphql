@@ -1,5 +1,6 @@
 query Hero {
   hero {
+    __typename
     name
   }
 }

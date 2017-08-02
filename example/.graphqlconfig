@@ -1,3 +1,10 @@
 {
-  "schemaPath": "schema.graphql"
+  "schemaPath": "schema.graphqls",
+  "includes": [
+    "*.graphql",
+  ],
+  "codegen": {
+    "target": "flow",
+    "output": "annotations.flow.js"
+  }
 }

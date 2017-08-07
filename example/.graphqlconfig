@@ -3,8 +3,10 @@
   "includes": [
     "*.graphql"
   ],
-  "codegen": {
-    "target": "flow",
-    "output": "annotations.flow.js"
+  "extensions": {
+    "codegen": {
+      "target": "flow",
+      "output": "annotations.flow.js"
+    }
   }
 }

@@ -49,7 +49,7 @@ const getInputs = async (config, configPath): Promise<string[]> => {
 
 export const handler = async ({getConfig}) => {
   const {config, configPath} = getConfig()
-  const options = config.codegen || { }
+  const options = (config.extensions || {}).codegen || {}
   const configBase = path.dirname(configPath)
   const schema = await getSchema(config, configPath)
   const schemaLoc = '/tmp/gql-schema.json' // todo: change this

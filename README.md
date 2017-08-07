@@ -16,7 +16,7 @@ Configure the plugin via a `.graphqlconfig`.
 
 The schema will be obtained from the `schemaPath` key and the files from the `includes` key.
 
-All other options such as `target` or `output` must be placed in the `codegen` key.
+All other options such as `target` or `output` must be placed in the `extensions.codegen` key.
 
 Here is an example:
 
@@ -28,9 +28,11 @@ Here is an example:
     "src/**/*.graphql",
     "src/**/*.gql",
   ],
-  "codegen": {
-    "target": "flow",
-    "output": "src/graphql-annotations.js"
+  "extensions": {
+    "codegen": {
+      "target": "flow",
+      "output": "src/graphql-annotations.js"
+    }
   }
 }
 ```

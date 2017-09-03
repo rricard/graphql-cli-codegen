@@ -26,7 +26,7 @@ Here is an example:
   "schemaPath": "schema.graphqls",
   "includes": [
     "src/**/*.graphql",
-    "src/**/*.gql",
+    "src/**/*.gql"
   ],
   "extensions": {
     "codegen": {
